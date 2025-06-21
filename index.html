@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internship Portal - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body class="hidden">
+  <div class="cursor-core"></div>
+  <div class="cursor-shadow"></div>
+  <div id="loader">
+    <img src="assets/logo.png" alt="Loading..." />
+  </div>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="assets/logo.png" class="nav-logo" alt="Logo" />
+      <div class="logo-caption">Internship Portal</div>
+    </div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="verify.html">Verify Certificate</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html" class="btn-login">Login</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <div class="navbar-spacer"></div>
+
+  <div id="mobileSidebar" class="sidebar">
+    <div class="sidebar-header">
+      <img src="assets/logo.png" class="sidebar-logo" alt="Logo" />
+      <span class="close-btn" id="closeSidebar">&times;</span>
+    </div>
+    <ul class="sidebar-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="verify.html">Verify Certificate</a></li>
+      <li><a href="#">What's Special</a></li>
+      <li><a href="login.html">Login to Portal</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section class="hero parallax" data-aos="fade-up">
+      <div class="hero-content hero-glass">
+        <h1>Ignite Your Career with Us</h1>
+        <p>Join the most trusted internship platform where real work meets real mentors. Gain hands-on experience, develop high-demand skills, and earn verified certificates.</p>
+        <p>Explore domains like Cybersecurity, Full Stack Development, Data Science and more with tailored mentorship and peer collaboration.</p>
+        <a href="programs.html" class="btn-primary">Explore Programs</a>
+      </div>
+      <div class="hero-animation" data-aos="zoom-in">
+        <img src="assets/hero.jpg" alt="Internship Hero" />
+      </div>
+    </section>
+
+    <!-- Replace your existing WHO WE ARE and WHY CHOOSE US card sections -->
+
+<section class="popup-info" data-aos="fade-up">
+  <h2 style="margin-bottom: 2rem;">Who We Are</h2>
+  <div class="feature-cards">
+    <div class="card glass-card hover-animate" data-aos="fade-up" data-aos-delay="0">
+      <h3>Innovators</h3>
+      <p>We build and deliver internships tailored to emerging tech fields with real mentors and results.</p>
+    </div>
+    <div class="card glass-card hover-animate" data-aos="fade-up" data-aos-delay="150">
+      <h3>Educators</h3>
+      <p>We teach modern skills through guided projects, mock interviews, and one-on-one feedback.</p>
+    </div>
+    <div class="card glass-card hover-animate" data-aos="fade-up" data-aos-delay="300">
+      <h3>Career Catalysts</h3>
+      <p>Our alumni land jobs at Fortune 500 companies, empowered by portfolios built here.</p>
+    </div>
+  </div>
+</section>
+
+<section class="popup-info" data-aos="fade-up">
+  <h2 style="margin-bottom: 2rem;">Why Choose Us?</h2>
+  <div class="feature-cards">
+    <div class="card glass-card hover-animate" data-aos="fade-up" data-aos-delay="0">
+      <h3>Verified Certification</h3>
+      <p>Every program ends with a trusted certificate and LinkedIn-endorsable skill validation.</p>
+    </div>
+    <div class="card glass-card hover-animate" data-aos="fade-up" data-aos-delay="150">
+      <h3>Mentor Access</h3>
+      <p>Weekly mentor syncs, code reviews, and live demos build your technical edge.</p>
+    </div>
+    <div class="card glass-card hover-animate" data-aos="fade-up" data-aos-delay="300">
+      <h3>Community & Growth</h3>
+      <p>Join our global intern network for collaboration, career growth, and peer learning.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Replace your current SWIPER carousel section with this -->
+
+<section class="testimonials" data-aos="fade-up">
+  <h2>What Our Interns Say</h2>
+  <div class="test-grid">
+    <div class="test-card" data-aos="zoom-in" data-aos-delay="0">
+      “Absolutely loved the real-world learning. I walked away with confidence and a job offer!”
+    </div>
+    <div class="test-card" data-aos="zoom-in" data-aos-delay="150">
+      “This was the only internship where I actually built things from scratch. Highly recommend!”
+    </div>
+    <div class="test-card" data-aos="zoom-in" data-aos-delay="300">
+      “Incredible mentorship and support. I felt valued and challenged throughout.”
+    </div>
+  </div>
+
+<!-- Contact Section at bottom of Home Page -->
+<section class="contact-section" id="home-contact" style="margin-bottom: 0; padding-bottom: 1rem;">
+  <h2 class="contact-heading animated-heading">Fill the form to contact us</h2>
+  <form class="contact-form" 
+        data-aos="zoom-in-up" 
+        data-aos-duration="1000" 
+        data-aos-delay="200" 
+        onsubmit="event.preventDefault(); alert('Your message has been sent!');">
+    <div class="form-row">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+    </div>
+    <div class="form-row">
+      <input type="text" placeholder="Domain of Internship" required />
+      <input type="text" placeholder="State" required />
+    </div>
+    <textarea placeholder="Message" rows="5" required></textarea>
+    <button type="submit" class="btn-submit">Submit</button>
+  </form>
+</section>
+
+
+  </main>
+
+<footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-column about">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo">
+        <p>
+          We believe that the future of education lies in bridging
+          the gap between academic learning and industry needs.
+        </p>
+      </div>
+
+      <div class="footer-column links left-align">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">Login To Portal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column links left-align">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="contact.html#faqs">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact left-align">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#">
+            <img src="assets/lin.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+            <span>LinkedIn</span>
+          </a>
+          <a href="#">
+            <img src="assets/insta.png" alt="Instagram" style="width: 20px; height: 20px;">
+            <span>Instagram</span>
+          </a>
+          <a href="#">
+            <img src="assets/youtbe.png" alt="YouTube" style="width: 20px; height: 20px;">
+            <span>YouTube</span>
+          </a>
+        </div>
+        <p>Stay connected with us on social media for the latest updates and tech insights. Follow our journey and grow with us!</p>
+        <p><strong>Phone:</strong> +91 81234 56789</p>
+        <p><strong>Email:</strong> support@randomtech.org</p>
+        <p><strong>Address:</strong> 42 Park Street, Technopark Building, Hyderabad, Telangana - 500081</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 | All Rights Reserved |</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

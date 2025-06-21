@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programs - Internship Portal</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+<body class="hidden">
+  <div class="cursor-core"></div>
+  <div class="cursor-shadow"></div>
+  <div id="loader">
+    <img src="assets/logo.png" alt="Loading...">
+  </div>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="assets/logo.png" class="nav-logo" alt="Logo" />
+      <div class="logo-caption">Internship Portal</div>
+    </div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html" class="active">Programs</a></li>
+        <li><a href="verify.html">Verify Certificate</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html" class="btn-login">Login</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <div id="mobileSidebar" class="sidebar">
+    <div class="sidebar-header">
+      <img src="assets/logo.png" class="sidebar-logo" alt="Logo" />
+      <span class="close-btn" id="closeSidebar">&times;</span>
+    </div>
+    <div class="sidebar-search">
+      <input type="text" placeholder="Search..." id="sidebarSearch" />
+      <span class="search-icon">&#128269;</span>
+    </div>
+    <ul class="sidebar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="programs.html" class="active">Programs</a></li>
+      <li><a href="verify.html">Verify Certificate</a></li>
+      <li><a href="#">What's Special</a></li>
+      <li><a href="login.html">Login to Portal</a></li>
+    </ul>
+  </div>
+
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1>Our Internship Programs</h1>
+      <p>Choose from our curated programs tailored for industry readiness. Each program includes mentor support and verifiable certification.</p>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-cards">
+      <div class="card hover-animate" data-aos="fade-up">
+        <img src="assets/cyber.png" alt="Cybersecurity">
+        <h3>Cybersecurity</h3>
+        <p>Learn ethical hacking, SIEM tools, and system defense.</p>
+        <a href="cyber.html" class="btn-primary">Learn More</a>
+      </div>
+      <div class="card hover-animate" data-aos="fade-up">
+        <img src="assets/full.png" alt="Full Stack">
+        <h3>Full Stack Development</h3>
+        <p>Master HTML, CSS, JavaScript, React & Node.js.</p>
+        <a href="fullstack.html" class="btn-primary">Learn More</a>
+      </div>
+      <div class="card hover-animate" data-aos="fade-up">
+        <img src="assets/data.png" alt="Data Science">
+        <h3>Data Science</h3>
+        <p>Build ML models, visualize data, work with Python.</p>
+        <a href="data.html" class="btn-primary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" data-aos="fade-up">
+    <h2>Ready to Start Your Journey?</h2>
+    <a href="contact.html" class="btn-primary">Apply Now</a>
+  </section>
+
+<footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-column about">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo">
+        <p>
+          We believe that the future of education lies in bridging
+          the gap between academic learning and industry needs.
+        </p>
+      </div>
+
+      <div class="footer-column links left-align">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">Login To Portal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column links left-align">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="contact.html#faqs">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact left-align">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#">
+            <img src="assets/lin.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+            <span>LinkedIn</span>
+          </a>
+          <a href="#">
+            <img src="assets/insta.png" alt="Instagram" style="width: 20px; height: 20px;">
+            <span>Instagram</span>
+          </a>
+          <a href="#">
+            <img src="assets/youtbe.png" alt="YouTube" style="width: 20px; height: 20px;">
+            <span>YouTube</span>
+          </a>
+        </div>
+        <p>Stay connected with us on social media for the latest updates and tech insights. Follow our journey and grow with us!</p>
+        <p><strong>Phone:</strong> +91 81234 56789</p>
+        <p><strong>Email:</strong> support@randomtech.org</p>
+        <p><strong>Address:</strong> 42 Park Street, Technopark Building, Hyderabad, Telangana - 500081</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 | All Rights Reserved |</p>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
